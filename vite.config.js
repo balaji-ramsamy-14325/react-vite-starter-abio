@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     headers: {
-      'Content-Security-Policy': "frame-ancestors 'none';"
+      'Cross-Origin-Embedder-Policy': 'require-corp',
     }
   }
 })
